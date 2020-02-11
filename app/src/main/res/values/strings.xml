@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Wise Owlet Tracker   </string>
     <string name="welcome">Welcome</string>
+    <string name="Subjects">Choose Subjects:</string>
     <string name="log_in">Log In</string>
     <string name="stopwatch">Stop Watch</string>
     <string name="zerotime">00:00:00</string>

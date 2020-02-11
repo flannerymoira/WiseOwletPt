@@ -2,6 +2,7 @@ package com.example.wiseowletproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +53,7 @@ public class StudentRegistration extends AppCompatActivity {
                             Boolean insert = db.insert(first_name_S, surname_S, email_S, password_S, phone_S);
                             if (insert) {
                                 Toast.makeText(getApplicationContext(), "Account Registered!", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(StudentRegistration.this, SetupSubjects.class));
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "Account already Exists!", Toast.LENGTH_SHORT).show();

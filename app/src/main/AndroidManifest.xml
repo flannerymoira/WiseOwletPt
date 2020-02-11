@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
+        <activity android:name=".AddStudyLog"></activity>
+        <activity android:name=".SetupSubjects" />
+        <activity android:name=".StopWatch" />
+        <activity android:name=".Login" />
         <activity android:name=".StudentRegistration" />
         <activity android:name=".MainActivity">
             <intent-filter>
