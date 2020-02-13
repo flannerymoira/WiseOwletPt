@@ -45,7 +45,7 @@ public class StudentRegistration extends AppCompatActivity {
                 String phone_S = phone.getText().toString();
 
                 if (email_S.equals("") || password_S.equals("") || confirm_S.equals(""))
-                    Toast.makeText(getApplicationContext(), "Fields are empty!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Email and password fields must be entered", Toast.LENGTH_SHORT).show();
                 else {
                     if (password_S.equals(confirm_S)) {
                         Boolean checkEmail = db.checkEmail(email_S);
@@ -56,8 +56,11 @@ public class StudentRegistration extends AppCompatActivity {
                                 startActivity(new Intent(StudentRegistration.this, SetupSubjects.class));
                             }
                         } else {
-                            Toast.makeText(getApplicationContext(), "Account already Exists!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Account with this email address already exists!", Toast.LENGTH_SHORT).show();
                         }
+                    }
+                    else {
+                        Toast.makeText(getApplicationContext(), "The two passwords entered do not match.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

@@ -54,6 +54,8 @@ public class Login extends AppCompatActivity {
                         Boolean checkPassword = db.checkPassword(Email,Password);
                         if (checkPassword) {
                             Toast.makeText(getApplicationContext(), "Login succesful", Toast.LENGTH_SHORT).show();
+                            Intent log = new Intent(Login.this, AddStudyLog.class);
+                            startActivity(log);
                         } else {
                             Toast.makeText(getApplicationContext(), "Incorrect Password", Toast.LENGTH_SHORT).show();
                         }

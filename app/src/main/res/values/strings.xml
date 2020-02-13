@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Wise Owlet Tracker   </string>
     <string name="welcome">Welcome</string>
-    <string name="Subjects">Choose Subjects:</string>
+    <string name="Subjects">Choose Subject:</string>
+    <string name="Year">Choose Year:</string>
     <string name="log_in">Log In</string>
     <string name="stopwatch">Stop Watch</string>
     <string name="zerotime">00:00:00</string>
@@ -14,8 +15,10 @@
     <string name="no_account">Don\'t have an account?</string>
     <string name="about_us">About Us</string>
     <string name="Rgt">Register</string>
+    <string name="Add">Add</string>
     <string name="quote">Quote</string>
     <string name="email">E-mail</string>
+    <string name="password">Password</string>
     <string name="f_Name">First Name</string>
     <string name="l_name">Last Name</string>
     <string name="create_pass">Create Password</string>
@@ -23,4 +26,10 @@
     <string name="telephone">Telephone</string>
     <string name="btn_cont">Continue</string>
     <string name="Reg">Registration</string>
+    <string name="year1">Year 1</string>
+    <string name="year2">Year 2</string>
+    <string name="year3">Year 3</string>
+    <string name="year5">Year 5</string>
+    <string name="year6">Year 6</string>
+    <string name="ty">Transition Year</string>
 </resources>
