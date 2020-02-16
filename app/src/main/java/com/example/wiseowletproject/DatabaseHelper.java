@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
-        super(context, "wiseOwlet.db", null, 1);
+        super(context, "wiseOwlet1.db", null, 1);
     }
 
     @Override
